@@ -1,4 +1,4 @@
-package com.especial.inca.game.config;
+package com.especial.inca.game.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;

@@ -10,6 +10,8 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
+import com.especial.inca.game.service.ImplementsUserDetailsService;
+
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
@@ -50,7 +52,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 			.addFilterBefore(new JWTLoginFilter("/login", authenticationManager()),
 	                UsernamePasswordAuthenticationFilter.class)
 			
-			// filtra outras requisi para verificar a presença do JWT no header
+			// filtra outras requisi para verificar a presenï¿½a do JWT no header
 			.addFilterBefore(new JWTAuthenticationFilter(),
 	                UsernamePasswordAuthenticationFilter.class);
 	}

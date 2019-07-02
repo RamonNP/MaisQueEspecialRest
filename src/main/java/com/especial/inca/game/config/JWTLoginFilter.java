@@ -16,6 +16,7 @@ import org.springframework.security.web.authentication.AbstractAuthenticationPro
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import com.especial.inca.game.model.AccountCredentials;
+import com.especial.inca.game.service.TokenAuthenticationService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class JWTLoginFilter extends AbstractAuthenticationProcessingFilter {

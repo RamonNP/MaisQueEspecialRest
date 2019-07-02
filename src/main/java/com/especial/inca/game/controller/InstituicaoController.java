@@ -40,7 +40,7 @@ public class InstituicaoController {
 		j1.setDescImg("https://i.ibb.co/9VVLSMy/jogo-espa-o.png");
 		j1.setDescurl("http://politica-ramon.000webhostapp.com/ArthurGames/cozinha/");
 		Jogo j2 = new Jogo();
-		j2.setDescnome("Jogo do espaço");
+		j2.setDescnome("Jogo do espaco");
 		j2.setDescDetalhe("Este Jogo Treina a escolhe sobre todos itens da astrologia");
 		j2.setDescImg("https://i.ibb.co/r0MVB70/Capturar.png");
 		list.add(j1);

@@ -1,11 +1,9 @@
 plugins {
 	id 'org.springframework.boot' version '2.1.5.RELEASE'
 	id 'java'
-	//id 'war'
+	id 'war'
 }
-jar {
-	enabled = true
-}
+
 apply plugin: 'io.spring.dependency-management'
 
 group = 'com.especial.inca'
@@ -39,9 +37,9 @@ dependencies {
 	runtimeOnly 'mysql:mysql-connector-java'
 // https://mvnrepository.com/artifact/org.postgresql/postgresql
 // https://mvnrepository.com/artifact/org.postgresql/postgresql
-	compile group: 'org.postgresql', name: 'postgresql', version: '9.4-1200-jdbc41'
-	//providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
-	//testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	//testImplementation 'org.springframework.security:spring-security-test'
+compile group: 'org.postgresql', name: 'postgresql', version: '9.4-1200-jdbc41'
+	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.security:spring-security-test'
 	implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.2'
 }

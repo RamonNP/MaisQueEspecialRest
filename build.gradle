@@ -10,6 +10,11 @@ group = 'com.especial.inca'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
+jar {
+    baseName = 'game-rest-spring'
+    version = '0.0.1'
+}
+
 configurations {
 	developmentOnly
 	runtimeClasspath {

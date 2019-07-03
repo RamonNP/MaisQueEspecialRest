@@ -38,3 +38,8 @@ compile group: 'org.postgresql', name: 'postgresql', version: '9.4-1200-jdbc41'
 	testImplementation 'org.springframework.security:spring-security-test'
 	implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.2'
 }
+
+jar {
+    baseName = 'app'
+    version = '0.0.1'
+}
